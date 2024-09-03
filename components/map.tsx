@@ -4,8 +4,8 @@ import React, { useRef, useEffect, useState } from 'react';
 import NextImage from "next/image";
 import Grid  from '@/components/grid';
 import MessageModal  from '@/components/MessageModal';
-import { GridCell, ImageSize, Alliance } from '../types/types';
-import mapImage from '../public/map-hq-original.png';
+import { GridCell, ImageSize, Alliance } from '@/types/types';
+import mapImage from '@/public/map-hq-original.png';
 import { getCellHeight, getCellWidth } from '@/utils/grid_utils';
 
 export default function S2Map( {mapId, selectedAlliance, grid , setGrid} : { mapId: string, selectedAlliance: Alliance | null, grid: GridCell[][], setGrid: (grid: GridCell[][]) => void }) {
